@@ -45,3 +45,17 @@ class Pupil {
 
 var p = new Pupil("Michael", 12);
 p.printPupilProfile();
+
+// binary notation for numbers
+let oneNumber = 0b000010100;
+
+// Math methods in es6
+console.log(Math.cosh(90));
+console.log(Math.cbrt(8));
+
+// repeat count method
+console.log("xyz".repeat(3));
+
+// endsWith method
+var str = "John Smith"; 
+console.log(str.endsWith("Smith"));
