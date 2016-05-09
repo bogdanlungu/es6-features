@@ -57,5 +57,55 @@ console.log(Math.cbrt(8));
 console.log("xyz".repeat(3));
 
 // endsWith method
-var str = "John Smith"; 
+var str = "John Smith";
 console.log(str.endsWith("Smith"));
+
+// Arrays - array.from(iterableObject, mapFunction, this) method
+let numbers = "678902311";
+let theObject = {
+    number: 1
+};
+let array = Array.from(numbers, function(val) {
+    return parseInt(val) + this.number;
+}, theObject);
+console.log(array);
+
+/* Classes and inheritance */
+let X = function(name) {
+    this.name = name;
+}
+
+X.prototype.sayName = function() {
+    console.log("My name is " + this.name);
+}
+
+class Y extends X {
+    constructor(name, age) {
+        super(name);
+        this.age = age;
+    }
+
+    sayAge() {
+        console.log("And my age is " + this.age);
+    }
+}
+
+class Z extends Y {
+    constructor(name, age, profession) {
+        super(name, age);
+        this.profession = profession;
+    }
+
+    showAllData() {
+        super.sayName();
+        super.sayAge();
+        console.log("The profession is " + this.profession);
+    }
+}
+
+//let aPerson = new Y("John Smith", 25);
+//aPerson.sayName();
+//aPerson.sayAge();
+
+let anotherPerson = new Z("John Smith", 30, "doctor");
+anotherPerson.showAllData();
