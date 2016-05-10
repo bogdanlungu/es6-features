@@ -1,3 +1,10 @@
+// Import modules
+import {
+    queen,
+    calculateSquare,
+    calculateCubic
+} from '../js/lib';
+
 // let keyword
 let name = 'John';
 let profession = 'doctor';
@@ -109,3 +116,6 @@ class Z extends Y {
 
 let anotherPerson = new Z("John Smith", 30, "doctor");
 anotherPerson.showAllData();
+
+// output from the imported module
+console.log(queen);
