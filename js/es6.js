@@ -119,3 +119,5 @@ anotherPerson.showAllData();
 
 // output from the imported module
 console.log(queen);
+console.log(calculateSquare(4));
+console.log(calculateCubic(4));
