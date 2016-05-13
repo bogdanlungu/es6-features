@@ -121,3 +121,17 @@ anotherPerson.showAllData();
 console.log(queen);
 console.log(calculateSquare(4));
 console.log(calculateCubic(4));
+
+// Generators
+function* generatorFunc()
+{
+  yield 1;
+  yield 2;
+  yield 3;
+  yield 4;
+  yield 5;
+}
+
+let generator = generatorFunc();
+
+console.log(generator.next().value);
