@@ -123,6 +123,7 @@ console.log(calculateSquare(4));
 console.log(calculateCubic(4));
 
 // Generators
+/*
 function* generatorFunc()
 {
   yield 1;
@@ -135,3 +136,4 @@ function* generatorFunc()
 let generator = generatorFunc();
 
 console.log(generator.next().value);
+*/
